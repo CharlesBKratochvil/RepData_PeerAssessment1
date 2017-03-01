@@ -16,7 +16,7 @@ hist(stepsTotalPerDay, breaks = 6, main = "Frequency of number of steps per day"
 stepsMeanPerDay <- tapply(data$steps, data$date, mean, na.rm = T)
 median(stepsTotalPerDay, na.rm = T)
 ```
-
+![alt tag](https://github.com/CharlesBKratochvil/RepData_PeerAssessment1/blob/master/instructions_fig/2.png)
 ```{r}
 stepsMeanPerInterval <- tapply(data$steps, data$interval, mean, na.rm = T)
 plot(stepsMeanPerInterval, type = "l", main = ("Steps vs. Interval (daily average)"), 
@@ -44,7 +44,7 @@ stepsTotalPerDay_NoMissing <- tapply(data_NoMissing$steps, data_NoMissing$date,
 hist(stepsTotalPerDay_NoMissing, breaks = 6, main = "Frequency of number of steps per day", 
     xlab = "Number of steps per day", ylab = "Frequency", col = "red")
 ```
-
+![alt tag](https://github.com/CharlesBKratochvil/RepData_PeerAssessment1/blob/master/instructions_fig/3.png)
 ```{r}
 stepsMeanPerInterval_NoMissing <- tapply(data_NoMissing$steps, data_NoMissing$interval, 
     mean)
@@ -53,6 +53,7 @@ median(stepsTotalPerDay_NoMissing)
 plot(stepsMeanPerInterval_NoMissing, type = "l", xlab = "Interval", ylab = "# of Steps", 
     main = "Steps vs. Interval (missing replaced with mean)")
 ```
+![alt tag]((https://github.com/CharlesBKratochvil/RepData_PeerAssessment1/blob/master/instructions_fig/4.png)
 ```{r}
 
 tmpLT <- as.POSIXlt(data$date, format = "%Y-%m-%d")
@@ -79,4 +80,4 @@ with(data, {
 
 })
 ```
-
+![alt tag](https://github.com/CharlesBKratochvil/RepData_PeerAssessment1/blob/master/instructions_fig/5.png)
