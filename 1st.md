@@ -53,7 +53,7 @@ median(stepsTotalPerDay_NoMissing)
 plot(stepsMeanPerInterval_NoMissing, type = "l", xlab = "Interval", ylab = "# of Steps", 
     main = "Steps vs. Interval (missing replaced with mean)")
 ```
-![alt tag]((https://github.com/CharlesBKratochvil/RepData_PeerAssessment1/blob/master/instructions_fig/4.png)
+![alt tag](https://github.com/CharlesBKratochvil/RepData_PeerAssessment1/blob/master/instructions_fig/4.png)
 ```{r}
 
 tmpLT <- as.POSIXlt(data$date, format = "%Y-%m-%d")
